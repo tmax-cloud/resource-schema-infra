@@ -6002,7 +6002,8 @@
         }
       },
       "required": [
-        "name"
+        "name",
+        "image"
       ],
       "type": "object"
     },
@@ -9797,6 +9798,20 @@
         "limits": {
           "additionalProperties": {
             "$ref": "#/definitions/io.k8s.apimachinery.pkg.api.resource.Quantity"
+          },
+          "properties": {
+            "cpu": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "memory": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
           },
           "description": "Limits describes the maximum amount of compute resources allowed. More info: https://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/",
           "type": "object"
