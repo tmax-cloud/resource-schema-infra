@@ -6002,7 +6002,8 @@
         }
       },
       "required": [
-        "name"
+        "name",
+        "image"
       ],
       "type": "object"
     },
