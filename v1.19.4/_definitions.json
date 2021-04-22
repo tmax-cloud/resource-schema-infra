@@ -13503,9 +13503,22 @@
         },
         "rule": {
           "description": "rule is the strategy that will dictate what FSGroup is used in the SecurityContext.",
-          "type": "string"
+          "type": "string",
+          "enum": [
+              "MustRunAs",
+              "MayRunAs",
+              "RunAsAny"
+          ],
+          "enumNames": [
+              "MustRunAs",
+              "MayRunAs",
+              "RunAsAny"
+          ]
         }
       },
+      "required": [
+        "rule"
+      ],
       "type": "object"
     },
     "io.k8s.api.policy.v1beta1.HostPortRange": {
@@ -13916,7 +13929,17 @@
         },
         "rule": {
           "description": "rule is the strategy that will dictate the allowable RunAsGroup values that may be set.",
-          "type": "string"
+          "type": "string",
+          "enum": [
+              "MustRunAs",
+              "MayRunAs",
+              "RunAsAny"
+          ],
+          "enumNames": [
+              "MustRunAs",
+              "MayRunAs",
+              "RunAsAny"
+          ]
         }
       },
       "required": [
@@ -13936,7 +13959,17 @@
         },
         "rule": {
           "description": "rule is the strategy that will dictate the allowable RunAsUser values that may be set.",
-          "type": "string"
+          "type": "string",
+          "enum": [
+              "MustRunAs",
+              "MustRunAsNonRoot",
+              "RunAsAny"
+          ],
+          "enumNames": [
+              "MustRunAs",
+              "MustRunAsNonRoot",
+              "RunAsAny"
+          ]
         }
       },
       "required": [
@@ -13969,7 +14002,15 @@
       "properties": {
         "rule": {
           "description": "rule is the strategy that will dictate the allowable labels that may be set.",
-          "type": "string"
+          "type": "string",
+            "enum": [
+              "MustRunAs",
+              "RunAsAny"
+          ],
+          "enumNames": [
+            "MustRunAs",
+            "RunAsAny"
+          ]
         },
         "seLinuxOptions": {
           "$ref": "#/definitions/io.k8s.api.core.v1.SELinuxOptions",
@@ -13993,9 +14034,22 @@
         },
         "rule": {
           "description": "rule is the strategy that will dictate what supplemental groups is used in the SecurityContext.",
-          "type": "string"
+          "type": "string",
+          "enum": [
+              "MustRunAs",
+              "MayRunAs",
+              "RunAsAny"
+          ],
+          "enumNames": [
+              "MustRunAs",
+              "MayRunAs",
+              "RunAsAny"
+          ]
         }
       },
+      "required": [
+        "rule"
+      ],
       "type": "object"
     },
     "io.k8s.api.rbac.v1.AggregationRule": {

@@ -30,4 +30,26 @@
         - from : https://git.k8s.io/enhancements/keps/sig-node/20190226-pod-overhead.md 
         - to : https://github.com/kubernetes/enhancements/blob/master/keps/sig-node/688-pod-overhead/README.md
     </details>
+- [Definitions] PSP required 필드 추가 및 rule enum 추가  - IMS #255646
+    <details>
+    <summary>변경사항 Detail</summary>
+
+    - "io.k8s.api.policy.v1beta1.PodSecurityPolicySpec".seLinux : "#/definitions/io.k8s.api.policy.v1beta1.SELinuxStrategyOptions" 
+        - add rule enums
     
+    - "io.k8s.api.policy.v1beta1.PodSecurityPolicySpec".fsGroup : "#/definitions/io.k8s.api.policy.v1beta1.FSGroupStrategyOptions"
+        - add required - 'rule' field
+
+    - "io.k8s.api.policy.v1beta1.PodSecurityPolicySpec".supplementalGroups : "#/definitions/io.k8s.api.policy.v1beta1.SupplementalGroupsStrategyOptions"
+        - add required - 'rule' field
+        - add rule enums
+
+    - "io.k8s.api.policy.v1beta1.PodSecurityPolicySpec".runAsGroup : "#/definitions/io.k8s.api.policy.v1beta1.RunAsGroupStrategyOptions"
+        - add rule enums
+
+    - "io.k8s.api.policy.v1beta1.PodSecurityPolicySpec".runAsUser : "#/definitions/io.k8s.api.policy.v1beta1.RunAsUserStrategyOptions"
+        - add rule enums
+
+    - "io.k8s.api.policy.v1beta1.PodSecurityPolicySpec".fsGroup : "#/definitions/io.k8s.api.policy.v1beta1.FSGroupStrategyOptions"
+        - add rule enums
+    </details>
