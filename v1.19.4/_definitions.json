@@ -4358,7 +4358,6 @@
           "description": "Specifies the job that will be created when executing a CronJob."
         },
         "schedule": {
-          "description": "The schedule in Cron format, see https://en.wikipedia.org/wiki/Cron.",
           "type": "string"
         },
         "startingDeadlineSeconds": {
@@ -4510,7 +4509,6 @@
           "description": "Specifies the job that will be created when executing a CronJob."
         },
         "schedule": {
-          "description": "The schedule in Cron format, see https://en.wikipedia.org/wiki/Cron.",
           "type": "string"
         },
         "startingDeadlineSeconds": {
