@@ -54,3 +54,5 @@
         - add rule enums
     </details>
 - [Difinitions] "io.k8s.api.core.v1.PersistentVolume", "io.k8s.api.core.v1.PersistentVolumeClaim" 에서 status 제거 - IMS #260528
+- [Definitions] "io.k8s.api.policy.v1beta1.FSGroupStrategyOptions", "io.k8s.api.policy.v1beta1.SupplementalGroupsStrategyOptions" 에서 "MustRunAs","MayRunAs" 시 range를 required하게 if문 추가, "io.k8s.api.policy.v1beta1.RunAsUserStrategyOptions" 에서 "MustRunAs" 시 range를 required하게 if문 추가 - IMS #261101
+- [Definitions] "io.k8s.api.core.v1.PodSpec" overhead description 추가 -IMS #291624
