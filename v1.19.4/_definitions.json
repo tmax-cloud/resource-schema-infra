@@ -2836,6 +2836,7 @@
         }
       },
       "required": [
+	"apiVersion",
         "kind",
         "name"
       ],
@@ -3069,6 +3070,7 @@
         }
       },
       "required": [
+	"apiVersion",
         "kind",
         "name"
       ],
@@ -3536,6 +3538,7 @@
         }
       },
       "required": [
+	"apiVersion",
         "kind",
         "name"
       ],
